@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(223, 223, 223);
+    font-family: "Roboto", sans-serif;
+    
+}
+/* ----------------------------------sharing style for all sections-------------------------------------------- */
+header,main #about_me,#my_skills , #projects , form ,footer{
+    position: relative;
+    left:5%;
+    width:90%;
+    margin-top: 50px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+/* ---------------------------------------------header style ----------------------------------------- */
+header{
+    margin-top: 30px;
+    background-color: rgb(33, 33, 33);
+    text-align: center;
+    padding: 30px  ;
+    color: white;
+    border-radius: 10px;
+}
+header h1{
+    font-weight: 900;
+    word-spacing: 10px;
+    font-size: 40px;
+}
+header>span{
+    font-size: 30px;
+    display: inline-block;
+    margin: 20px 0;
+    font-weight: 400;
+    color: rgb(171, 171, 171);
+}
+header nav ul li{
+    display: inline;
+    margin-left: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+header nav ul li a:hover{
+    color: gold;
+    
+}
+/* -----------------------------------------------about_me style -------------------------------------------------------------- */
+main #about_me{
+    padding-bottom: 250px;
+}
+main #about_me h2{
+    margin-bottom: 15px;
+}
+
+main #about_me p{
+    font-size: 20px;
+    line-height: 35px;
+}
+main #about_me p>span{
+    font-weight: bold;
+    color: darkblue;
+}
+/* -----------------------------------------------my_skills style -------------------------------------------------------------- */
+main #my_skills{
+    background-image: url(../image/front1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main #my_skills h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+main #my_skills .content-skills{
+    margin-top: 20px;
+    position: relative;
+    height: 100px;
+    background-color: rgb(215 224 246 / 60%);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+main #my_skills .content-skills .skill:nth-child(1){
+
+    top: 10px;
+    left: 80px;
+    
+}
+main #my_skills .content-skills .skill:nth-child(2){
+
+    top: 10px;
+    left: 250px;
+}
+main #my_skills .content-skills .skill:nth-child(3){
+
+    top: 10px;
+    left: 420px;
+}
+main #my_skills .content-skills .skill:nth-child(4){
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+main #my_skills .content-skills .skill:nth-child(5){
+
+    top: 10px;
+    right: 420px;
+}
+main #my_skills .content-skills .skill:nth-child(6){
+
+    top: 10px;
+    right: 250px;
+}
+main #my_skills .content-skills .skill:nth-child(7){
+
+    top: 10px;
+    right: 80px;
+}
+main #my_skills .content-skills .skill{
+    position: absolute;
+    border:3px solid rgb(249, 167, 144);
+    width:80px;
+    height: 80px;
+    text-align: center;
+    line-height: 130px;
+    border-radius: 10px;
+}
+main #my_skills .content-skills .skill:hover{
+    top:0px;
+}
+main #my_skills .content-skills .skill:nth-child(4):hover{
+    top: 40px;
+}
+/* ---------------------------------------------------------my_project-------------------------------------------------------------- */
+main #projects{
+    position: relative;
+    height: 1080px;
+}
+
+main #projects h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+main #projects ol{
+    list-style-type: none;
+    margin-top: 20px;
+}
+main #projects ol li>div{
+    text-align: center;
+    width: 280px;
+    height: 250px;
+}
+main #projects ol li{
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+main #projects ol li:nth-child(1){
+    top: -550px;
+    left:50px;
+    background-color: rgb(243, 42, 243);
+    color: black;
+}
+main #projects ol li:nth-child(2){
+    top: 100px;
+    left:50px;
+    background-color: orange;
+    color: black;
+}
+main #projects ol li:nth-child(3){
+    top: 480px;
+    left:50px;
+    background-color: rgb(54, 155, 189);
+    color: black;
+}
+main #projects ol li:nth-child(4){
+    bottom: 20px;
+    left:50px;
+    background-color: rgb(246, 122, 134);
+    color: black;
+    width: 98%;  
+}
+main #projects ol li>div{
+    text-align: center;
+    width: 280px;
+    height: 250px;
+}
+main #projects ol li:nth-child(4)>div{
+    position: relative;
+}
+main #projects ol li:nth-child(4)>div h3{
+    position: absolute;
+    left: 250%;
+}
+main #projects ol li:nth-child(4)>div p{
+    position: absolute;
+    left: 180%;
+    top: 50px;
+    width: 500px;
+}
+main #projects ol li>div h3{
+    font-size: 30px;
+    color:#1E201E;
+}
+main #projects ol li>div p{
+    width:270px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(36, 36, 36);
+}
+/* --------------------------------------------------------------------------form ------------------------------------------------------------ */
+form{
+    margin-bottom: 50px;
+    height: fit-content;
+    background-color: #f8f5f8;
+}
+form div input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+    margin: 10px 0;
+}
+
+form div input:focus{
+    border: 2px solid green;
+    outline: none;
+}
+form div textarea{
+    display: block;
+    padding: 10px 10px;
+    background-color: white;
+    border: 1px solid rgb(193, 193, 193);
+    margin: 10px 0;
+    width: 100%;
+}
+form div textarea:focus{
+    border: 1px solid green;
+    outline: none;
+}
+form div input::placeholder , textarea::placeholder{
+    color:rgb(165, 165, 165);
+}
+input[type="submit"]{
+    border: 1px solid rgb(51, 194, 51);
+    outline: none;
+    color: rgb(43, 237, 43);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width:10%;
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: 0.4s all;
+}
+input[type="submit"]:hover{
+    border:1px solid transparent;
+    background-color: rgb(43, 237, 43);
+    color:white;
+}
+
+/* -------------------------------------------------------------footer------------------------------------------------------------------ */
+
+footer{
+    background-color: #1E201E;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+}
+footer span a{
+    color: gold;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer span a:hover{
+    color: white;
+}
+/* ---------------------------------------------------------swap-up------------------------------------------------------------------------- */
+#swap_up{
+    position: fixed;
+    bottom: 20px;
+    right:5px;
+    background-color: aqua;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#swap_up a{
+    color: white;
+    text-decoration: none;
+}
+#swap_up a i{
+    font-size: 30px;
+}
